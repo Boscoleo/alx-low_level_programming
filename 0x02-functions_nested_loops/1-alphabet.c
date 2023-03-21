@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+/**
+ * main - Entry point
+ *
+ * Description: 'Prints the alphabet, in lowercase, followed by a new line'
+ *
+ * Return: Always 0 (Success)
+ */
+
+int main(void)
+{
+	char alphabet;
+
+	alphabet = 'a';
+	printf("Lowercase alphabets:\n");
+	while (alphabet <= 'z')
+	{
+		printf("%c", alphabet);
+		alphabet++;
+	}
+
+	putchar('\n');
+	return (0);
+}
