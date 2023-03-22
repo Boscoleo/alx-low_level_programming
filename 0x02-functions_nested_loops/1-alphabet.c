@@ -1,25 +1,18 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
- *
- * Description: 'Prints the alphabet, in lowercase, followed by a new line'
+ * print_alphabet - Prints the alphabet in lowercase
  *
  * Return: Always 0 (Success)
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	char alphabet;
+	int p;
 
-	alphabet = 'a';
-	printf("Lowercase alphabets:\n");
-	while (alphabet <= 'z')
+	for (p = 97; p <= 122; p++)
 	{
-		printf("%c", alphabet);
-		alphabet++;
+		_putchar(p);
 	}
-
-	putchar('\n');
-	return (0);
+	_puchar('\n');
 }
